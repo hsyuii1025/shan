@@ -4,7 +4,7 @@ html{
 
 *,*:before,*:after{
     box-sizing: inherit;
-    font-family:Roboto;
+    font-family:GenJyuuGothicL;
 }
 
 @font-face{
@@ -77,7 +77,7 @@ nav a{
     border-radius:10px;
     background-color: white;
     color:black;
-    font-family: Roboto;
+    font-family: GenJyuuGothicL;
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.35em;
@@ -144,7 +144,7 @@ nav a{
     border-radius:8px;
     background-color: white;
     color:black;
-    font-family: Roboto;
+    font-family: GenJyuuGothicL;
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 0.2em;
