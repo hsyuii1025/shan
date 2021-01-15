@@ -1,0 +1,493 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+    font-family:Roboto;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,a
+{color:#333333;list-style:none; margin:0px; padding:0px;}
+
+/* container{
+    width:1440px;
+} */
+
+/* 字體 */
+@font-face{
+    font-family:'GenJyuuGothicL'; 
+    
+    src:url('./font/GenJyuuGothicL.eot');
+    
+    src:local('☺️'),url('./font/GenJyuuGothicL.ttf')
+    format('truetype'),url('./font/GenJyuuGothicL.svg#GenJyuuGothicL') format('svg');
+    
+    font-weight:bold;font-style:bold;
+    
+    }
+
+.font{
+    font-family: "GenJyuuGothicL";
+}
+/* 打字效果 */
+/* .typing {
+    width: 3em;
+    white-space: nowrap;
+    border-right: 1px solid transparent;
+    animation: typing 3s steps(15, end), blink-caret 1s step-end infinite;
+    overflow: hidden;color:green;
+} */
+/* 列印效果
+@keyframes typing {
+  from { width: 0; }
+  to { width: 3.2em; }
+} */
+/* 游標閃啊閃
+@keyframes blink-caret {
+  from, to { box-shadow: 1px 0 0 0 transparent; }
+  50% { box-shadow: 1px 0 0 0; }
+} */
+
+.blink{
+    -webkit-animation: blink 5s linear infinite;
+    opacity:0;
+}
+
+@-webkit-keyframes blink{
+    0% {
+        opacity: 0;
+
+        /* 0 - 1秒 淡入*/
+    }
+    30% {
+        opacity: 1;
+
+        /* 1- 5秒靜止*/
+    }
+
+    90% {
+        opacity: 1;
+
+        /* 1- 5秒靜止*/
+    }
+
+    100% {
+        opacity: 0;
+   
+        /* 5-6秒淡出*/
+    }
+
+
+}
+
+@media screen {
+
+.container{
+    width:auto;
+    margin:0 auto;
+    padding:0px;
+}
+.main-area{
+    width:100%;
+    height:1000px;
+    background-color:#161616;
+}
+
+.screen{
+    width:100%;
+    height:100%;
+    background-color:#161616;
+}
+
+.screen p{
+    display:block;
+    color:gray;
+    padding-top:300px;
+    font-size:10em;
+    text-align: center;
+
+}
+
+.works-container{
+    width:auto;
+    padding-bottom:50px;
+}
+
+.works-container h1{
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:30px;
+    
+}
+
+
+.works-area{
+    margin-left:5%;
+    margin-right:5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.works-photo{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    padding:20px 20px;
+
+}
+
+
+.works-photo img{
+    width:100%;
+    max-width:800px;
+    min-width:300px;
+}
+
+.works-photo:hover{
+    opacity:70%;
+}
+
+
+.slogan-container{
+    display:block;
+    width:100%;
+}
+.slogan1{
+    display:flex;
+    width:100%;
+    height:450px;
+    background-color:#176F95;
+    text-align:left;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slogan1 h1{
+    color:white;
+    font-size: 600%;
+    font-weight: bold;
+}
+
+.slogan1 p{
+    color:white;
+    font-size: 200%;
+}
+
+.dragon{
+    display: flex;
+    width:20%;
+    height:20%;
+    align-items: center;
+}
+.dragon img{
+    width:100%;
+}
+.slogan2{
+    display:flex;
+    flex-direction: row-reverse;
+    width:100%;
+    height:450px;
+    text-align:right;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#FBC335;
+}
+
+.slogan2 h1{
+    color:black;
+    font-size: 600%;
+    font-weight: bold;
+}
+
+.slogan2 p{
+    color:black;
+    font-size: 200%;
+}
+
+.dog{
+    display: flex;
+    width:20%;
+    height:20%;
+    align-items: center;
+}
+.dog img{
+    width:100%;
+}
+}
+
+@media screen and (max-width: 768px){
+
+    .container{
+        width:auto;
+        margin:0 auto;
+        padding:0px;
+    }
+    .main-area{
+        width:100%;
+        height:400px;
+        background-color:#161616;
+    }
+    
+    .screen{
+        width:100%;
+        height:60%;
+        background-color:#161616;
+    }
+
+    .screen p{
+        display:block;
+        color:gray;
+        padding-top:120px;
+        font-size:5em;
+        text-align: center;
+
+    }
+    
+    
+    .works-container{
+        width:auto;
+        padding-bottom:20px;
+        
+    }
+    
+    .works-container h1{
+        text-align:center;
+        padding-top:50px;
+        padding-bottom:30px;
+        
+    }
+    
+    
+    .works-area{
+        margin-left:5%;
+        margin-right:5%;
+        display:flex;
+        justify-content:center;
+    }
+    
+    .works-photo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:50%;
+        padding:5px 5px;
+    
+    }
+    
+    .works-photo img{
+        width:100%;
+        max-width:600px;
+        min-width:200px;
+    }
+    
+    .slogan-container{
+        display:block;
+        width:100%;
+    }
+    .slogan1{
+        display:flex;
+        width:100%;
+        height:450px;
+        background-color:#176F95;
+        text-align:left;
+        flex-wrap:nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .slogan1 h1{
+        color:white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .slogan1 p{
+        color:white;
+        font-size: 20px;
+    }
+    
+    .dragon{
+        display: flex;
+        width:50%;
+        height:50%;
+        align-items: center;
+    }
+    .dragon img{
+        width:100%;
+    }
+    .slogan2{
+        display:flex;
+        flex-direction: row-reverse;
+        width:100%;
+        height:450px;
+        text-align:right;
+        flex-wrap:nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color:#FBC335;
+    }
+    
+    
+    .slogan2 h1{
+        color:black;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .slogan2 p{
+        color:black;
+        font-size: 20px;
+    }
+    
+    .dog{
+        display: flex;
+        width:30%;
+        height:30%;
+        align-items: center;
+    }
+    .dog img{
+        width:100%;
+    }
+    }
+
+
+    @media screen and (max-width: 480px){
+
+        .container{
+            width:auto;
+            margin:0 auto;
+            padding:0px;
+        }
+        .main-area{
+            width:100%;
+            height:300px;
+            background-color:#161616;
+        }
+        
+        .screen{
+            width:100%;
+            height:50%;
+            background-color:#161616;
+        }
+
+        .screen p{
+            display:block;
+            color:gray;
+            padding-top:120px;
+            font-size:3em;
+            text-align: center;
+        }
+        
+        .works-container{
+            width:auto;
+            padding-bottom:50px;
+            
+        }
+        
+        .works-container h1{
+            text-align:center;
+            padding-top:30px;
+            padding-bottom:20px;
+            
+        }
+        
+        
+        .works-area{
+            margin-left:10%;
+            margin-right:10%;
+            display:flex;
+            justify-content:center;
+        }
+        
+        .works-photo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width:100%;
+            padding:10px 10px;
+        
+        }
+        
+        .works-photo img{
+            width:100%;
+            max-width:600px;
+            min-width:200px;
+        }
+        
+        .slogan-container{
+            display:block;
+            width:100%;
+        }
+        .slogan1{
+            display:flex;
+            width:100%;
+            height:450px;
+            background-color:#176F95;
+            text-align:center;
+            flex-wrap:nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        
+        .slogan1 h1{
+            color:white;
+            font-size: 300%;
+            font-weight: bold;
+            
+        }
+        
+        .slogan1 p{
+            color:white;
+            font-size: 150%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        
+        .dragon{
+            display: flex;
+            width:60%;
+            height:30%;
+            align-items: center;
+        }
+
+        .slogan2{
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            height:450px;
+            text-align:center;
+            flex-wrap:nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color:#FBC335;
+        }
+        
+        .slogan2 h1{
+            color:black;
+            font-size: 300%;
+            font-weight: bold;
+        }
+        
+        .slogan2 p{
+            color:black;
+            font-size: 150%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .dog{
+            display: flex;
+            width:50%;
+            height:50%;
+            align-items: center;
+        }
+        .dog img{
+            width:100%;
+        }
+        
+        }

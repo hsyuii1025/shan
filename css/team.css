@@ -1,0 +1,277 @@
+@font-face{
+    font-family:'GenJyuuGothicL'; 
+    
+    src:url('./font/GenJyuuGothicL.eot');
+    
+    src:local('☺'),url('./font/GenJyuuGothicL.ttf')
+    format('truetype'),url('./font/GenJyuuGothicL.svg#GenJyuuGothicL') format('svg');
+    
+    font-weight:bold;font-style:bold;
+    
+    }
+
+.font{
+    font-family: "GenJyuuGothicL";
+}
+
+/*color*/
+.white{
+    color: white;
+}
+
+.orange{
+    color:  #FA5738;
+}
+
+.green{
+    color: #0081B5;
+}
+
+.yellow{
+    color: #FBC335;
+}
+
+.bg_yellow{
+    background-color: #FBC335;
+}
+
+.bg_green{
+    background-color: #0081B5;
+}
+
+.bg_orange{
+    background-color: #FA5738;
+}
+
+.bg_white{
+    background-color: white;
+}
+
+.bg_black{
+    background-color: black;
+}
+
+
+/*bg_col*/
+.col-1{width: 8.3%;}
+.col-2{width: 16.6%;}
+.col-3{width: 25%;}
+.col-4{width: 33.3%;}
+.col-5{width: 41.6%;}
+.col-bg-6{width: 50%;}
+.col-7{width: 58.3%;}
+.col-8{width: 66.6%;}
+.col-9{width: 75%;}
+.col-10{width: 83.3%;}
+.col-11{width: 91.6%;}
+.col-12{width: 100%;}
+
+.mylink{
+    cursor: pointer;
+}
+/*fixed*/
+.remote{  
+    display: flex;
+    justify-content: center;
+}
+
+.remote_content{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: -80px;
+    width: 30%;
+    height: 20%;
+    padding: 40px;
+    border-radius: 100px 100px 0px 0px;
+    transition-duration: 0.5s;
+}
+
+.remote_content:hover{
+    bottom: 0;
+}
+
+.remote_content_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.remote_content_items:hover{
+    opacity: 70%;
+}
+
+/*main_area*/
+.main_area{
+    display: flex;
+}
+
+.lbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+    transition-duration: 1s;
+}
+.rbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+    transition-duration: 1s;
+}
+
+/*photo*/
+
+.photo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.mode_two{
+    transition-duration: 2s;
+}
+.mode_three{}
+.mode_two{}
+
+.x{
+    width: 50%;
+}
+
+.photo_img{
+    position: absolute;
+    width: 50%;
+}
+
+
+.name{
+    font-size: 18px;
+    letter-spacing: 8px;
+    padding-bottom: 15px;
+}
+
+.position{
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.saying{
+    font-size: 13px;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+}
+.like{
+    font-size: 13px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+
+.gan{
+    font-size: 13px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    padding-bottom: 100px;
+}
+
+.link{
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 28px;
+    border-radius: 40px;
+    margin-bottom: 150px;
+    transition-duration: 0.5s;
+}
+
+.link:hover{
+    opacity: 70%;
+}
+
+
+
+@media(max-width:768px){
+    /*fixed*/
+    .remote_content{
+        flex-direction: column;
+        bottom: -70px;
+        width: 27%;
+        height: 24%;
+        right: -110px;
+        bottom: 300px;
+        padding: 20px;
+        border-radius: 30px 0px 0px 30px;
+    }
+
+    .remote_content:hover{
+        bottom: 300px;
+        right: -110px;
+    }
+
+    .remote_content_items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
+    /*photo*/
+    .photo{
+        padding-bottom: 40px;
+    }
+
+    .name{
+        padding-bottom: 20px;
+    }
+
+    .position{
+        padding-bottom: 25px;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .saying{
+        font-size: 10px;
+        padding-bottom: 40px;
+    }
+
+    .link{
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width:480px){
+    /*fixed*/
+    .remote{}
+
+    .remote_content{
+        flex-direction: column;
+        width: 33%;
+        height: 24%;
+        right: -80px;
+        bottom: 300px;
+        border-radius: 30px 0px 0px 30px;
+    }
+
+    .remote_content:hover{
+        bottom: 300px;
+        right: -80px;
+    }
+    
+    .col-sm-12{width: 100%;}
+
+    .main_area{
+        flex-direction: column;
+    }
+}

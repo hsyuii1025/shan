@@ -1,0 +1,233 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+    font-family:Roboto;
+}
+
+@font-face{
+    font-family:'GenJyuuGothicL'; 
+    
+    src:url('./font/GenJyuuGothicL.eot');
+    
+    src:local('☺️'),url('./font/GenJyuuGothicL.ttf')
+    format('truetype'),url('./font/GenJyuuGothicL.svg#GenJyuuGothicL') format('svg');
+    
+    font-weight:bold;font-style:bold;
+    
+    }
+
+.font{
+    font-family: "GenJyuuGothicL";
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,a
+{color:#333333;list-style:none; margin:0px; padding:0px;}
+
+.header{
+    display:flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height:80px;
+    background-color:#FBC335;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fix{
+    position:fixed;
+    z-index:10;
+}
+
+.logo-container{
+    padding-left:5%; 
+}
+
+.logo{
+    display:block;
+    width:139px;
+    height:auto;
+
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+
+}
+
+nav li{
+    margin:10px;
+    margin-left:30px;
+}
+
+
+nav a{
+    display: flex;
+    width:140px;
+    height:45px;
+    justify-content: center;
+    align-items: center;
+    color: inherit; /* 移除超連結顏色 */
+    text-decoration: none;  /* 移除超連結底線 */
+    border-radius:10px;
+    background-color: white;
+    color:black;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.35em;
+    text-align: center;
+    padding-left:0.4em;
+
+    /* box-shadow:2px 5px 5px 0 black; */
+}
+
+nav a:hover{
+     box-shadow:3px 5px 0px 0 black;
+}
+
+.ham{
+    display:none;
+}
+
+@media screen and (max-width: 768px){
+
+
+    .header{
+    display:flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height:90px;
+    background-color:#FBC335;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    padding-left:5%; 
+}
+
+.logo{
+    display:block;
+    width:130px;
+    height:auto;
+    margin-left:20%; 
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+
+}
+
+nav li{
+    margin:10px;
+    margin-left:10px;
+}
+
+
+nav a{
+    display: flex;
+    width:110px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    color: inherit; /* 移除超連結顏色 */
+    text-decoration: none;  /* 移除超連結底線 */
+    border-radius:8px;
+    background-color: white;
+    color:black;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-left:0.4em;
+
+    /* box-shadow:2px 5px 5px 0 black; */
+}
+
+nav a:hover{
+     box-shadow:3px 5px 0px 0 black;
+}
+
+.ham{
+    display:none;
+}
+}
+
+@media screen and (max-width: 480px){
+
+    .header{
+        position: fixed;
+        width: 100%;
+        height:90px;
+        background-color:#FBC335;
+
+    }
+     
+    .logo-container{
+        margin:0 auto;
+        padding-left: 0;
+    }
+
+    .logo{
+        display:block;
+        width:139px;
+        height:42px;
+
+    
+    }
+    nav{
+        display: none;
+        align-items: center;
+        margin-right: 0px;
+    
+    }
+
+
+    .ham{
+        margin-right: 20px;
+        display:block;
+        float:right
+    }
+    .ham-logo{
+        display:block;
+    }
+
+    .ham-list{
+        display:none;
+    }
+
+    .ham-li-show{
+        background-color: white;
+        margin:0px 0px;
+        display:block;
+        position: absolute;
+        top:90px;
+        right:0px;
+        line-height: 4em;
+        font-size: 30px;
+        text-align: center;
+        width:100%;
+        padding:0px 0px;
+    }
+
+    .ham-li-show a{
+        display:flex;
+        color: inherit; /* 移除超連結顏色 */
+        text-decoration: none;  /* 移除超連結底線 */
+        width:100%;
+        height:120px;
+        justify-content: center;
+        align-content: center;
+        /* line-height: 50px; */
+    }
+}
