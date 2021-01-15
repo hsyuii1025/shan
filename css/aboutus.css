@@ -1,0 +1,547 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,a
+{color:#333333;list-style:none; margin:0px; padding:0px;}
+
+
+@font-face{
+    font-family:'GenJyuuGothicL'; 
+    
+    src:url('./font/GenJyuuGothicL.eot');
+    
+    src:local('☺️'),url('./font/GenJyuuGothicL.ttf')
+    format('truetype'),url('./font/GenJyuuGothicL.svg#GenJyuuGothicL') format('svg');
+    
+    font-weight:bold;font-style:bold;
+    
+    }
+
+
+    .blink{
+        -webkit-animation: blink 5s linear infinite;
+        opacity:0;
+    }
+    
+    @-webkit-keyframes blink{
+        0% {
+            opacity: 0;
+    
+            /* 0 - 1秒 淡入*/
+        }
+        30% {
+            opacity: 1;
+    
+            /* 1- 5秒靜止*/
+        }
+    
+        90% {
+            opacity: 1;
+    
+            /* 1- 5秒靜止*/
+        }
+    
+        100% {
+            opacity: 0;
+       
+            /* 5-6秒淡出*/
+        }
+    
+    
+    }
+
+p{
+    font-family: "GenJyuuGothicL";
+    font-weight:bold;font-style:bold;
+    
+}
+
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0px;
+}
+
+.information{
+    background-color: #161616;
+    width:100%;
+    display: flex;
+    padding:180px 30px 80px 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coordinate{
+    background-color: #161616;
+    display: block;
+    font-size: 4em;
+
+}
+.map{
+    display: block;
+    width:300px;
+    height:auto;
+}
+
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    padding:10px 0 ; 
+    letter-spacing: 0.2em;
+    
+}
+
+.contact p{
+    color:white;
+    
+}
+
+.contact img{
+    padding-right: 20px;
+}
+
+.social-media{
+    padding:10px 0px;
+    align-self: center;
+}
+
+.social-media img{
+    padding:10px 15px;
+}
+
+.ask{
+    display: block;
+    padding:10px 20px;
+    color: white;
+    text-decoration: none; 
+    letter-spacing: 0.2em;
+    border: white solid;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.ask:hover{
+    display: block;
+    padding:10px 20px;
+    background-color: white;
+    color: #FBC335;
+    text-decoration: none; 
+    letter-spacing: 0.2em;
+    border: white solid;
+    align-self: center;
+    border-radius: 10px;
+}
+
+h2{
+    margin-top:80px;
+    margin-bottom:20px;
+    text-align: center;
+    font-size: 40px;
+}
+.about{
+    background-color: #FBC335;
+    margin:40px 0;
+    padding:60px 140px;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 20px;
+}
+
+.about-btn{
+    display:none;
+}
+
+
+.wehave{
+    background-color:#176F95;
+    display: flex;
+    justify-content: space-evenly;
+    margin:40px 0;
+    padding:50px 0;
+}
+
+
+.wehave-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wehave-content h3{
+    padding:30px 0 10px 0;
+    color:white;
+    font-family: "GenJyuuGothicL";
+}
+
+.wehave-content p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    font-family: "GenJyuuGothicL";
+}
+
+.join{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin:40px 0;
+    padding:60px 140px ;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 30px;
+
+}
+
+.join p{
+    background-color: #FBC335;
+    padding:60px 60px ;
+    border-radius: 10px;
+
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .container{
+        width:100%;
+        margin:0 auto;
+        padding:0px;
+    }
+    
+    .information{
+        background-color: #161616;
+        width:100%;
+        display: flex;
+        padding:180px 30px 80px 30px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .coordinate{
+        background-color: #161616;
+        display: block;
+        font-size: 3em;
+    
+    }
+    
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact{
+        display: flex;
+        padding:5px 0 ; 
+        letter-spacing: 0.2em;
+        
+    }
+    
+    .contact p{
+        color:white;
+        font-size: 0.5em;
+
+
+        
+    }
+    
+    .contact img{
+        padding-right: 20px;
+    }
+    
+    .social-media{
+        padding:10px 0px;
+        align-self: center;
+    }
+    
+    .social-media img{
+        padding:10px 15px;
+    }
+    
+    .ask{
+        display: block;
+        padding:10px 20px;
+        color: white;
+        text-decoration: none; 
+        letter-spacing: 0.2em;
+        border: white solid;
+        align-self: center;
+        border-radius: 10px;
+    }
+    
+    .ask:hover{
+        display: block;
+        padding:10px 20px;
+        background-color: white;
+        color: #FBC335;
+        text-decoration: none; 
+        letter-spacing: 0.2em;
+        border: white solid;
+        align-self: center;
+        border-radius: 10px;
+    }
+    
+    h2{
+        margin-top:80px;
+        margin-bottom:20px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .about{
+        background-color: #FBC335;
+        margin:40px 0;
+        padding:60px 100px;
+        letter-spacing: 0.1em;
+        line-height: 2em;
+        font-size: 16px;
+    }
+    
+    
+    .about-btn{
+        display:none;
+    }
+    
+    .wehave{
+        background-color:#176F95;
+        display: flex;
+        justify-content: space-evenly;
+        margin:40px 0;
+        padding:50px 0;
+    }
+    
+    
+    .wehave-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wehave-content img{
+        display:block;
+        width:200px;
+    }
+    
+    .wehave-content h3{
+        padding:30px 0 10px 0;
+        color:white;
+        font-family: "GenJyuuGothicL";
+    }
+    
+    .wehave-content p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:white;
+        font-family: "GenJyuuGothicL";
+    }
+    
+    .join{
+        display: flex;
+        justify-content: space-evenly;
+        margin:20px 0;
+        padding:60px 100px ;
+        letter-spacing: 0.1em;
+        font-size: 30px;
+    
+    }
+    
+    .join p{
+        background-color: #FBC335;
+        padding:30px 30px ;
+        border-radius: 10px;
+    
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .container{
+        width:100%;
+        margin:0 auto;
+        padding:0px;
+    }
+    
+    .information{
+        background-color: #161616;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        padding:180px 30px 80px 30px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .coordinate{
+        background-color: #161616;
+        display: block;
+        font-size: 3em;
+        padding-bottom:60px;
+    
+    }
+    
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact{
+        display: flex;
+        padding:8px 0 ; 
+        letter-spacing: 0.2em;
+        
+    }
+    
+    .contact p{
+        color:white;
+        font-size: 1em;
+
+
+        
+    }
+    
+    .contact img{
+        padding-right: 20px;
+    }
+    
+    .social-media{
+        padding:10px 0px;
+        align-self: center;
+    }
+    
+    .social-media img{
+        padding:10px 15px;
+    }
+    
+    .ask{
+        display: block;
+        padding:10px 20px;
+        color: white;
+        text-decoration: none; 
+        letter-spacing: 0.2em;
+        border: white solid;
+        align-self: center;
+        border-radius: 10px;
+    }
+    
+    .ask:hover{
+        display: block;
+        padding:10px 20px;
+        background-color: white;
+        color: #FBC335;
+        text-decoration: none; 
+        letter-spacing: 0.2em;
+        border: white solid;
+        align-self: center;
+        border-radius: 10px;
+    }
+    
+    h2{
+        margin-top:80px;
+        margin-bottom:20px;
+        text-align: center;
+        font-size: 40px;
+        padding:0 40px;
+    }
+    .about{
+        background-color: #FBC335;
+        margin:40px 0;
+        padding:60px 80px;
+        letter-spacing: 0.1em;
+        line-height: 2em;
+        font-size: 16px;
+    }
+    
+    .about-btn{
+        display:block;
+        float:right;
+        text-decoration: none;
+        padding:0.5px 8px;
+        border:black solid 2px; 
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .about-btn:hover{
+        float:right;
+        text-decoration: none;
+    }
+    .about-hide{
+        display:none;
+    }
+    
+    .about-show{
+        display:inline;
+    }
+
+    .about-btn-hide{
+        display:none;
+    }
+
+    .wehave{
+        background-color:#176F95;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin:40px 0;
+        padding:50px 0;
+    }
+    
+    
+    .wehave-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom:40px;
+    }
+
+    .wehave-content img{
+        display:block;
+        width:300px;
+    }
+    
+    .wehave-content h3{
+        padding:20px 0 10px 0;
+        color:white;
+        font-family: "GenJyuuGothicL";
+        font-size: 30px;
+    }
+    
+    .wehave-content p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:white;
+        font-family: "GenJyuuGothicL";
+        font-size: 25px;
+    }
+    
+    .join{
+        display: flex;
+        justify-content: space-evenly;
+        margin:20px 0;
+        padding:60px 30px ;
+        letter-spacing: 0.1em;
+        font-size: 30px;
+    
+    }
+    
+    .join p{
+        background-color: #FBC335;
+        padding:15px 15px ;
+        border-radius: 10px;
+    
+    }
+}

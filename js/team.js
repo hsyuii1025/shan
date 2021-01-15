@@ -1,0 +1,41 @@
+$(document).ready(function(){
+    $(".one").click(function(){
+        $(".like").css("display","none")
+        $(".position").css("display","block")
+        $(".saying").css("display","block")
+        $(".gan").css("display","none")
+        $(".mode_three").css("display","none")
+        $(".mode_two").css("display","none")
+        $(".lbar").css("background-color","#0081B5")
+        $(".rbar").css("background-color","#FA5738")
+    });
+
+    $(".two").click(function(){
+        $(".like").css("display","block")
+        $(".position").css("display","none")
+        $(".saying").css("display","none")
+        $(".gan").css("display","none")
+        $(".mode_three").css("display","none")
+        $(".mode_two").css("display","block")
+        $(".lbar").css("background-color","#FA5738")
+        $(".rbar").css("background-color","white")
+    });
+
+    $(".three").click(function(){
+        $(".like").css("display","none")
+        $(".position").css("display","none")
+        $(".saying").css("display","none")
+        $(".gan").css("display","block")
+        $(".mode_three").css("display","block")
+        $(".mode_two").css("display","none")
+        $(".lbar").css("background-color","white")
+        $(".rbar").css("background-color","#0081B5")
+    });
+
+    $(".link").mouseenter(function(){
+        $(".mode_link").css("display","block")
+    });
+    $(".link").mouseleave(function(){
+        $(".mode_link").css("display","none")
+    });
+});
