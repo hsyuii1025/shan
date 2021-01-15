@@ -168,20 +168,20 @@
 .saying{
     font-size: 13px;
     letter-spacing: 5px;
-    padding-bottom: 130px;
+    padding-bottom: 30px;
 }
 .like{
     font-size: 13px;
     letter-spacing: 5px;
     line-height: 30px;
-    padding-bottom: 140px;
+    padding-bottom: 40px;
 }
 
 .gan{
     font-size: 13px;
     letter-spacing: 5px;
     line-height: 30px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .link{
@@ -189,7 +189,7 @@
     letter-spacing: 2px;
     padding: 28px;
     border-radius: 40px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     transition-duration: 0.5s;
 }
 
