@@ -115,16 +115,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 180px;
-    padding-bottom:200px;
+    padding-top: 280px;
+    padding-bottom:100px;
     transition-duration: 1s;
 }
 .rbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 180px;
-    padding-bottom:200px;
+    padding-top: 280px;
+    padding-bottom:100px;
     transition-duration: 1s;
 }
 
