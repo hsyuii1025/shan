@@ -112,19 +112,19 @@
 }
 
 .lbar{
+    height:100%
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 280px;
-    padding-bottom: 100px;
+    padding-top: 180px;
     transition-duration: 1s;
 }
 .rbar{
+    height:100%
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 280px;
-    padding-bottom: 100px;
+    padding-top: 180px;
     transition-duration: 1s;
 }
 
