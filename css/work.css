@@ -93,7 +93,7 @@
 .hot_zone{
     display: flex;
     padding-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     margin-left: 0;
 }
 
@@ -176,7 +176,7 @@
 }
 
 .preview_img{
-    width: 80%;
+    width: 60%;
     box-shadow: #666 0px 0px 5px;
 }
 
